@@ -4,7 +4,7 @@
 # -- Copyright omitted --
 
 Name:           goahead
-Version:        0.0.7.1
+Version:        0.0.7.2
 Release:        0
 License:        Apache-2.0
 Group:          System/Monitoring
@@ -12,11 +12,7 @@ Summary:        Simple service that allows or denies server / OS restarts
 Url:            https://github.com/jlalvarez-arsys/goahead
 Source0:         %{name}-%{version}.tar.gz
 Source1:         vendor.tar.gz
-%if 0%{?suse_version}
-BuildRequires:  (go or go1.19)
-%else
-BuildRequires:  (go or go1.19)
-%endif
+BuildRequires:  golang
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
