@@ -64,7 +64,7 @@ func main() {
 			files := []string{}
 			err := filepath.Walk(config.IncludeDir, func(path string, f os.FileInfo, err error) error {
 				mainLogger.Info("Checking for file extension on file: " + path)
-				if filepath.Ext(path) == ".yml" {
+				if (filepath.Ext(path) == ".yml") || (filepath.Ext(path) == ".yaml") {
 					files = append(files, path)
 				}
 				return nil
