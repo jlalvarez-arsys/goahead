@@ -4,7 +4,7 @@
 # -- Copyright omitted --
 
 Name:           goahead
-Version:        0.0.7.2
+Version:        0.0.7.3
 Release:        0
 License:        Apache-2.0
 Group:          System/Monitoring

@@ -20,8 +20,8 @@ func serve() {
 
 	// TLS stuff
 	tlsConfig := &tls.Config{}
-	//Use only TLS v1.2
-	tlsConfig.MinVersion = tls.VersionTLS12
+	//Use only TLS v1.3
+	tlsConfig.MinVersion = tls.VersionTLS13
 
 	if config.RequireAndVerifyClientCert {
 
